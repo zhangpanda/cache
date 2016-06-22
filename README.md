@@ -4,7 +4,7 @@
 
 PHP交流 QQ 群：`16455997`
 
-环境要求：PHP >= 5.3.9
+环境要求：PHP >= 5.3
 
 使用 [composer](https://getcomposer.org/)
 
