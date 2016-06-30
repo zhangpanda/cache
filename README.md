@@ -12,6 +12,8 @@ PHP交流 QQ 群：`16455997`
 composer require pfinal/cache
   ```
 
+示例
+
   ```php
 <?php
 
@@ -19,7 +21,7 @@ require 'vendor/autoload.php';
 
 $fileCache = new \PFinal\Cache\FileCache();
 
-$fileCache->set('name', 'Ethan');
+$fileCache->set('name', 'Ethan', 60); //缓存60秒
 
 echo $fileCache->get('name');
 
