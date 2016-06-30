@@ -9,23 +9,18 @@ PHP交流 QQ 群：`16455997`
 使用 [composer](https://getcomposer.org/)
 
   ```shell
-  composer require "pfinal/cache:~1.0"
+composer require pfinal/cache
   ```
 
   ```php
-  <?php
+<?php
 
-  require 'vendor/autoload.php';
+require 'vendor/autoload.php';
 
-  $config = array(
-      'cachePath' => './cache',
-      'keyPrefix' => 'test',
-  );
+$fileCache = new \PFinal\Cache\FileCache();
 
-  $fileCache = new \PFinal\Cache\FileCache($config);
+$fileCache->set('name', 'Ethan');
 
-  $fileCache->set('name', 'Ethan');
-
-  echo $fileCache->get('name');
+echo $fileCache->get('name');
 
   ```
